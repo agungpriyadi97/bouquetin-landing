@@ -10,8 +10,8 @@ export default function Pricing() {
   return (
     <Section id="harga" title="Layanan & harga">
       <div className="grid gap-4 md:grid-cols-2">
-        {site.services.map((s) => (
-          <Card key={s.name}>
+        {site.services.map((s, i) => (
+          <Card key={`${s.name}-${i}`}>
             <div className="flex items-start justify-between gap-4">
               <div>
                 <h3 className="text-lg font-semibold">{s.name}</h3>

@@ -5,11 +5,8 @@ export default function FAQ() {
   return (
     <Section id="faq" title="FAQ">
       <div className="space-y-3">
-        {site.faqs.map((f) => (
-          <details
-            key={f.q}
-            className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4"
-          >
+        {site.faqs.map((f, i) => (
+          <details key={`${f.q}-${i}`}>
             <summary className="cursor-pointer text-sm font-semibold">
               {f.q}
             </summary>

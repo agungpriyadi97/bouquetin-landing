@@ -39,7 +39,7 @@ export default function Hero() {
         <div className="overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
           <div className="aspect-[4/3] w-full">
             <img
-              src="/hero.jpg"
+              src="/hero.png"
               alt={`Foto ${site.name}`}
               className="h-full w-full object-cover"
             />
